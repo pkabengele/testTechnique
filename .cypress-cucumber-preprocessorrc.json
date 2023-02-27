@@ -1,3 +1,9 @@
 {
-  "stepDefinitions": ["cypress/stepDefinitions/*.js"]
+  "stepDefinitions": ["cypress/stepDefinitions/*.js"],
+  "messages": {
+    "enabled": true
+  },
+  "json": {
+    "enabled": true
+  }
 }

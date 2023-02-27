@@ -11,5 +11,5 @@ Feature: Recherche
       | maxPrice | city       |
       | 1500     | Paris (75) |
     Then I have results for "Paris (75)"
-    And all prices are as expected
-    And locations are as expected
+    And all prices are under 1500
+    And locations contain "PARIS"
