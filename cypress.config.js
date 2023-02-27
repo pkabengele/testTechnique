@@ -3,7 +3,7 @@ const createBundler = require("@bahmutov/cypress-esbuild-preprocessor");
 const addCucumberPreprocessorPlugin = require("@badeball/cypress-cucumber-preprocessor").addCucumberPreprocessorPlugin;
 const createEsBuildPlugin = require("@badeball/cypress-cucumber-preprocessor/esbuild").createEsbuildPlugin;
 module.exports = defineConfig({
-    reporter: 'cypress-mochawesome-reporter',
+    reporter: 'mochawesome',
     e2e: {
         async setupNodeEvents(on, config) {
             require('cypress-mochawesome-reporter/plugin')(on);
