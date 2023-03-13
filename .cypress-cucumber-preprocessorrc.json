@@ -1,9 +1,14 @@
 {
-  "stepDefinitions": ["cypress/stepDefinitions/*.js"],
-  "messages": {
-    "enabled": true
-  },
   "json": {
-    "enabled": true
-  }
+    "enabled": true,
+    "output": "jsonlogs/log.json",
+    "formatter": "node_modules/.bin/cucumber-json-formatter"
+  },
+  "messages": {
+    "enabled": true,
+    "output": "jsonlogs/messages.ndjson"
+  },
+  "stepDefinitions": [
+    "cypress/stepDefinitions/*.js"
+  ]
 }
